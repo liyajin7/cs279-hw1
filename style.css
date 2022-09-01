@@ -1,0 +1,148 @@
+/* standard HTML styling */
+html {
+    height: 100vh;
+    min-width: 600px;
+    /* background-image: radial-gradient(#e66465, #9198e5); */
+    background-image: linear-gradient(0deg, #E1F4FF, #6461EF);
+    /* background: url(bg_image.png); */
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+/* container style class */
+.container {
+    width: 600px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
+    font-family: 'Poppins', sans-serif;
+    color: #CED4FF;
+}
+
+/* logo style class */
+.logo {
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    max-width: 500px;
+    padding: 1.5rem 0;
+    align-items: center;
+}
+
+/* main style class */
+.main{
+    padding: 20px;
+}
+
+/* form styling */
+form {
+    background-color: #F6F7FF;
+    padding: 15px;
+    border-radius: 5px;
+    display: flex;
+}
+
+/* styling the input file */
+input[type="text"] {
+    height: 30px;
+    outline: 0;
+    border: none;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    background-color: #F6F7FF;
+    flex-grow: 1;
+}
+
+/* button styling! sticking with the nice custom purple theme */
+button {
+    font-size: 1.5rem;
+    background-color: #F6F7FF;
+    outline: 0;
+    border: none;
+    color: #6461EF;
+}
+
+/* button[name="completeButton"]{
+    color: lightgrey;
+} */
+
+button:hover {
+    color: lightseagreen;
+}
+
+button[name="completeButton"]:hover {
+    color: green;
+}
+
+button[name="discardButton"]:hover {
+    color: red;
+}
+
+/* styling section with inputted to-do list */
+.toDoList {
+    background-color: #F6F7FF;
+    border-radius: 5px;
+    margin-top: 20px;
+    padding: 10px 25px;
+    height: 100%;
+    overflow-y: auto;
+}
+
+/* for each to-do list item */
+ul {
+    padding-left: 0px;
+    list-style: none;
+}
+
+/* @LIYA NEED TO MAKE SURE MATCHES COLOR SCHEME! + COMMENT-SPECIFY WHICH FORMATTING */
+/* styling  */
+li {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid lightgrey;
+    padding: 15px 0;
+    font-size: 1rem;
+    color: #595959
+}
+
+i {
+    font-style: italic;
+    pointer-events: none;
+}
+
+/* @LIYA FOR JS? */
+.to-do-item {
+    flex-grow: 1;
+}
+
+.clearAll {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px 3px;
+    cursor: pointer;
+    color: #A6A6A6;
+    font-size: 0.9rem;
+}
+
+/* hover state for clearall */
+.clearAll:hover {
+    color: red;
+}
+
+/* adding some linespacing for h2 element */
+h2 {
+    letter-spacing: .75px;
+}
+
+
+/* class for to-do list items */
+.to-do-list-item {
+    transition: all 0.3s ease-out;
+}
+
+/* class for to-do list item fall */
+.to-do-list-item-fall {
+    transform: translateY(12rem) rotateZ(10deg);
+    opacity: 0;
+}
