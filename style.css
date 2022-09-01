@@ -1,4 +1,4 @@
-/* standard HTML styling */
+/* standard HTML styling: background, dimensions */
 html {
     height: 100vh;
     min-width: 600px;
@@ -9,7 +9,7 @@ html {
     background-size: auto;
 }
 
-/* container style class */
+/* container style class for all page elements of to-do list */
 .container {
     width: 600px;
     display: flex;
@@ -35,7 +35,7 @@ html {
     padding: 20px;
 }
 
-/* form styling */
+/* form styling for user entry element */
 form {
     background-color: #F6F7FF;
     padding: 15px;
@@ -43,7 +43,7 @@ form {
     display: flex;
 }
 
-/* styling the input file */
+/* styling the input field */
 input[type="text"] {
     height: 30px;
     outline: 0;
@@ -54,7 +54,7 @@ input[type="text"] {
     flex-grow: 1;
 }
 
-/* button styling! sticking with the nice custom purple theme */
+/* adding standard styling for buttons! sticking with the nice custom purple theme */
 button {
     font-size: 1.5rem;
     background-color: #F6F7FF;
@@ -63,23 +63,18 @@ button {
     color: #6461EF;
 }
 
-/* button[name="completeButton"]{
-    color: lightgrey;
-} */
-
+/* "general" button hover styling vs. specific to individual to-do icon types */
 button:hover {
     color: lightseagreen;
 }
-
 button[name="completeButton"]:hover {
     color: green;
 }
-
 button[name="discardButton"]:hover {
     color: red;
 }
 
-/* styling section with inputted to-do list */
+/* styling section for inputted to-do list items */
 .toDoList {
     background-color: #F6F7FF;
     border-radius: 5px;
@@ -89,14 +84,13 @@ button[name="discardButton"]:hover {
     overflow-y: auto;
 }
 
-/* for each to-do list item */
+/* for the ul element that's parent to all li to-do elements */
 ul {
     padding-left: 0px;
     list-style: none;
 }
 
-/* @LIYA NEED TO MAKE SURE MATCHES COLOR SCHEME! + COMMENT-SPECIFY WHICH FORMATTING */
-/* styling  */
+/* formatting for each individual element in to-do list */
 li {
     display: flex;
     align-items: center;
@@ -106,16 +100,17 @@ li {
     color: #595959
 }
 
+/* ensures icons are never target of pointer events */
 i {
-    font-style: italic;
     pointer-events: none;
 }
 
-/* @LIYA FOR JS? */
+/* ensure within there's enough space in flex contianer after to-do text */
 .to-do-item {
     flex-grow: 1;
 }
 
+/* styling for "clear all" flex container */
 .clearAll {
     display: flex;
     justify-content: flex-end;
@@ -130,18 +125,17 @@ i {
     color: red;
 }
 
-/* adding some linespacing for h2 element */
+/* adding some linespacing for h2 text */
 h2 {
     letter-spacing: .75px;
 }
 
-
-/* class for to-do list items */
+/* transition styling for discarded to-do list items */
 .to-do-list-item {
     transition: all 0.3s ease-out;
 }
 
-/* class for to-do list item fall */
+/* class for to-do list discarding animation */
 .to-do-list-item-fall {
     transform: translateY(12rem) rotateZ(10deg);
     opacity: 0;
