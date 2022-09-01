@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- define HTML metadata, include CSS stylesheet, and embed nice-looking icons/fonts! -->
+    <!-- define HTML metadata, include CSS stylesheet, and embed nice-looking
+        icons/fonts! -->
     <meta charset="UTF-8">
     <meta name="viewport" content = "width=device-width, initial-scale=1.0">
     <title>Liya's Basic JS ToDo</title>
@@ -14,9 +15,10 @@
 </head>
 <body class="container">
 
-    <!-- header section, styled with CSS class "logo" -->
+    <!-- header section, styled with CSS logo class -->
     <header class="logo">
-        <!-- add custom logo at top of page. note to Liya: in the future, figure out less janky to host imgs other than Notion :| -->
+        <!-- add custom logo at top of page. note to Liya: in the future, figure
+            out less janky way to host imgs other than Notion :) -->
         <a>
             <img class="logo" src="https://s3.us-west-2.amazonaws.com/secure.notion-static.com/45ce572d-853a-4901-b418-331a5574c589/todo_logo.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220901%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20220901T201718Z&X-Amz-Expires=86400&X-Amz-Signature=74c10651555295f9ffec156d546a413c9a0a1eb039cfd26c05cc5dc492a816c3&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22todo_logo.png%22&x-id=GetObject" alt="Personalized to-do logo :))">
         </a>
@@ -25,25 +27,26 @@
 
     </header>
 
-    <!-- div element 1, styled with CSS class "main" -->
+    <!-- div containing all to-do entry / listing / removal functionality -->
     <div class="main">
-        <!-- add form -->
+        <!-- form for to-do user entry -->
         <form>
             <input type="text" placeholder="What do you need to-do?">
             <button type="submit"><i class="fas fa-plus-square"></i></button>
         </form>
 
-        <!-- div block used to output list of tasks (empty ul element already inserted) + a button to complete all tasks simultaneously -->
-        <!-- note to Liya: in future, figure out how to make Clear All button prettier upon landing pre-user interaction -->
+        <!-- div block used to hold list of li elements--to-do tasks (empty ul
+            element already inserted) + a button to clear all tasks simultaneously.
+            note to Liya: in future, figure out how to make Clear All button prettier
+            upon landing, pre-user interaction -->
         <div class="toDoList">
-            <!-- @LIYA: NEED TO INSERT THIS? -->
+            <!-- empty ul element to which li to-do elements will be appended as
+                children via app.js -->
             <ul>
             </ul>
             <a class="clearAll" id="clearAll">Clear All</a>
         </div>
     </div>
-
-
 
     <!-- <h1>Liya's Basic JS ToDo</h1> -->
     <script type=""text/javascript" src="app.js"></script>
