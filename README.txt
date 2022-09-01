@@ -1,3 +1,6 @@
+This prototype was designed using the code from this example:
+https://codingthesmartway.com/building-a-vanilla-javascript-todo-app-from-start-to-finish-ep-1-introduction-project-setup/
+
 I started the prototype by installing the Live Server plugin on VSCode
 (https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer,
 25m+ downloads and 4.5 stars).
